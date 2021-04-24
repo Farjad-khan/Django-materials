@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+body {
+  background-color: white;
+  height: 100%;
+  margin-bottom: 90px;
+}
+.li-nav {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.link-class {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+
+.link-class:hover {
+  color: rgb(4, 138, 4);
+}
+
+.parag {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+.parag:hover {
+  color: rgb(4, 131, 0);
+}
+
+.my-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.my-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 4px 16px;
+  text-align: center;
+}
+
+.card-list {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 3rem auto;
+  display: grid;
+  gap: 2rem;
+}
+.footer {
+  height: 40px;
+  margin-top: -40px;
+}
+
+.home {
+  display: grid;
+  margin: 20px auto;
+}
+.home-img {
+  height: 400px;
+  width: 400px;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  float: left;
+  width: 50%;
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+
+@media screen and (min-width: 940px) {
+  .card-list {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
